@@ -56,4 +56,5 @@ Com o servidor de dados rodando, abra o arquivo public/index.html no seu navegad
 Dica: Recomenda-se utilizar a extensão Live Server do VS Code para uma melhor experiência de desenvolvimento.
 
 **Autor: Christiano Gonçalves Araujo**
+
 Engenharia de Software - PUC Minas
