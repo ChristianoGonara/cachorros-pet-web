@@ -1,39 +1,59 @@
 # 🐾 CachorrosPet - Portal de Raças Caninas
 
-Projeto desenvolvido como Trabalho Interdisciplinar (TIAW/DIW) no curso de **Engenharia de Software da PUC Minas**. O portal é uma aplicação completa para consulta, favoritismo e gerenciamento de informações sobre raças de cachorros.
+Projeto desenvolvido para a disciplina de **Desenvolvimento de Interfaces Web (DIW)** no curso de **Engenharia de Software da PUC Minas**. O portal é uma aplicação funcional para consulta, gerenciamento e visualização de informações sobre raças de cachorros.
 
 ## 🚀 Funcionalidades
 
 - **Sistema de Usuários:** Cadastro de novos usuários e sistema de Login/Logout com controle de acesso.
-- **Painel Administrativo:** Área exclusiva para administradores realizarem o CRUD (Criação, Leitura, Atualização e Deleção) de raças.
+- **Painel Administrativo:** Área para CRUD (Criação, Leitura, Atualização e Deleção) de raças (exclusivo para perfil admin).
 - **Busca Dinâmica:** Filtro de busca por nome ou descrição na página principal.
-- **Visualização de Dados:** Gráfico interativo utilizando **Chart.js** para comparar níveis de energia entre as raças.
-- **Favoritos:** Sistema para que usuários logados possam marcar e gerenciar suas raças favoritas.
-- **Responsividade:** Interface totalmente adaptável para dispositivos móveis utilizando **Bootstrap 5**.
+- **Visualização de Dados:** Gráfico interativo utilizando **Chart.js** para comparar níveis de energia das raças.
+- **Detalhes Dinâmicos:** Página de raça que carrega informações e fotos específicas via parâmetros de URL.
+- **Favoritos:** Sistema para usuários logados marcarem suas raças preferidas.
+- **Responsividade:** Interface adaptável para dispositivos móveis desenvolvida com **Bootstrap 5**.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Front-end:** HTML5, CSS3 e JavaScript (ES6+).
-- **Framework CSS:** [Bootstrap 5.3.3](https://getbootstrap.com/) (Layout, Modais, Navbars e Grid).
+- **Linguagens:** HTML5, CSS3 e JavaScript (ES6+).
+- **Framework CSS:** [Bootstrap 5.3.3](https://getbootstrap.com/).
 - **Gráficos:** [Chart.js](https://www.chartjs.org/).
-- **Persistência de Dados:** Integração com Mock API via **JSON Server** (Node.js).
+- **Persistência de Dados:** API simulada com **JSON Server** (Node.js).
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura de Pastas
 
-- `index.html`: Página principal com destaques (Carousel), busca e gráficos.
-- `login.html`: Interface de autenticação e criação de conta.
-- `cadastro_itens.html`: Painel de gerenciamento (Somente Admin).
-- `raca.html`: Detalhamento dinâmico de informações e fotos de cada raça.
-- `/assets`: Pasta contendo estilos customizados, imagens e scripts de lógica (`app.js`, `home.js`, etc).
+```text
+├── db/              # Banco de dados simulado (db.json)
+├── public/          # Diretório principal da aplicação
+│   ├── assets/      # Recursos estáticos
+│   │   ├── css/     # Estilização customizada (style.css)
+│   │   ├── imgs/    # Logos e fotos do sistema
+│   │   └── scripts/ # Lógica JS (app.js, home.js, login.js, etc.)
+│   ├── index.html   # Home Page
+│   ├── login.html   # Tela de Autenticação
+│   ├── raca.html    # Detalhes da Raça
+│   └── cadastro_itens.html # Gestão de Raças (Admin)
+├── package.json     # Configurações do Node.js
+└── README.md        # Documentação do projeto
+```
+⚙️ Como executar o projeto
+1. Pré-requisitos
+Certifique-se de ter o Node.js instalado em sua máquina.
 
-## ⚙️ Como executar o projeto
+2. Instalar o JSON Server
+Caso ainda não tenha o servidor globalmente, execute o comando no seu terminal:
 
-1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
-2. Clone o repositório.
-3. Instale o JSON Server: `npm install -g json-server`.
-4. Inicie o servidor de dados: `json-server --watch db/db.json` (ou o caminho do seu arquivo .json).
-5. Abra o arquivo `index.html` no seu navegador (recomenda-se o uso da extensão Live Server no VS Code).
+Bash
+npm install -g json-server
+3. Iniciar o Servidor de Dados
+Navegue até a pasta do projeto e inicie o monitoramento do banco de dados simulado:
 
----
-**Autor:** [Christiano Gonçalves](https://www.linkedin.com/in/christiano-goncalves-araujo/)  
-*Engenharia de Software - PUC Minas*
+Bash
+json-server --watch db/db.json
+4. Acessar a Aplicação
+Com o servidor de dados rodando, abra o arquivo public/index.html no seu navegador.
+
+Dica: Recomenda-se utilizar a extensão Live Server do VS Code para uma melhor experiência de desenvolvimento.
+
+Autor: Christiano Gonçalves Araujo
+
+Engenharia de Software - PUC Minas
