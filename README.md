@@ -35,25 +35,24 @@ Projeto desenvolvido para a disciplina de **Desenvolvimento de Interfaces Web (D
 ├── package.json     # Configurações do Node.js
 └── README.md        # Documentação do projeto
 ```
-⚙️ Como executar o projeto
+## ⚙️ Como executar o projeto
 1. Pré-requisitos
 Certifique-se de ter o Node.js instalado em sua máquina.
 
-2. Instalar o JSON Server
+**2. Instalar o JSON Server**
 Caso ainda não tenha o servidor globalmente, execute o comando no seu terminal:
-
 Bash
 npm install -g json-server
-3. Iniciar o Servidor de Dados
-Navegue até a pasta do projeto e inicie o monitoramento do banco de dados simulado:
 
+**3. Iniciar o Servidor de Dados**
+Navegue até a pasta do projeto e inicie o monitoramento do banco de dados simulado:
 Bash
 json-server --watch db/db.json
-4. Acessar a Aplicação
+
+**4. Acessar a Aplicação**
 Com o servidor de dados rodando, abra o arquivo public/index.html no seu navegador.
 
 Dica: Recomenda-se utilizar a extensão Live Server do VS Code para uma melhor experiência de desenvolvimento.
 
-Autor: Christiano Gonçalves Araujo
-
+**Autor: Christiano Gonçalves Araujo**
 Engenharia de Software - PUC Minas
