@@ -36,7 +36,8 @@ Projeto desenvolvido para a disciplina de **Desenvolvimento de Interfaces Web (D
 └── README.md        # Documentação do projeto
 ```
 ## ⚙️ Como executar o projeto
-1. Pré-requisitos
+
+**1. Pré-requisitos**
 Certifique-se de ter o Node.js instalado em sua máquina.
 
 **2. Instalar o JSON Server**
